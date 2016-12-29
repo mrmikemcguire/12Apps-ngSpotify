@@ -1,1 +1,11 @@
-SEARCH
+<h1>Need Music?</h1>
+<p class="lead">Search the entire Spotify database with this handy app!</p>
+
+<form>
+
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Search Artists..." [(ngModel)]="searchStr" name="searchStr"
+        (keyup)="searchMusic()">
+    </div>
+
+</form>
