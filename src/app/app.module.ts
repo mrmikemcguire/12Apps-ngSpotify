@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common'; //added at the suggestion
+                                                                          //of StackOverflow
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './components/search/search.component';
@@ -26,8 +27,8 @@ import { routing } from './app.routing';
       HttpModule,
       routing
   ],
-  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
-
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}], //added at the suggestion
+                                                                             //of StackOverflow
   bootstrap: [AppComponent]
 })
 export class AppModule { }
