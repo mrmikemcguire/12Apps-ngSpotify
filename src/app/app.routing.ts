@@ -16,7 +16,7 @@ const appRoutes: Routes = [
         component: AboutComponent
     },
     {
-        path: 'artist/id',
+        path: 'artist/:id',
         component: ArtistComponent
     }
 ];
